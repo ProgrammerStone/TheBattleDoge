@@ -42,15 +42,11 @@ public class characterMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //type 0(wait), 1(move), 2(attack), 3(knockback)
         if (type == 1)
         {
             characterTrSelf.position += Vector3.right * direc * charStatSelf.spd * Time.deltaTime;
             
         }
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        
     }
 }
